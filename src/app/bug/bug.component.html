@@ -1,0 +1,19 @@
+<div class ="container spacer">
+    <div class="panel panel-primary"> 
+        <div class="panel-heading"> Liste des  bugs</div>
+        <div class= "panel-body">
+            <table class="table table-striped" >
+                <tr>
+                    <th>id</th><th>titre</th><th>categorie</th><th>description</th><th>projectname</th>
+                </tr>
+                <tr *ngFor="let c of pageBugs.content">
+                    <td>{{c.id}}</td>
+                    <td>{{c.titre}}</td>
+                    <td>{{c.categorie}}</td>
+                    <td>{{c.description}}</td>
+                    <td>{{c.projectname}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
